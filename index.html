@@ -4,28 +4,28 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Liehouan franck Arnaud_Portfolio</title>
-  <meta content="AI Engineer specializing in Deep Learning, Computer Vision, and Natural Language Processing" name="description">
-  <meta content="AI Engineer, Deep Learning, Computer Vision, Python, IoT, NLP" name="keywords">
+  <title>Liehouan Franck Arnaud - Portfolio</title>
+  <meta content="Research Student in AI specializing in Applied Mathematics and Statistical Modeling" name="description">
+  <meta content="AI Research, Applied Mathematics, Statistical Modeling, Python, Data Analysis" name="keywords">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- CSS -->
+  <!-- Fichiers CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- BOUTON DE NAVIGATION MOBILE -->
   <div class="mobile-nav-toggle">
     <i class="fas fa-bars"></i>
   </div>
 
-  <!-- ======= Header ======= -->
+  <!-- EN-TÊTE AVEC NAVIGATION -->
   <header id="header">
     <div class="nav-container">
       <nav class="nav-menu">
@@ -39,7 +39,7 @@
         </ul>
       </nav>
       
-      <!-- Language Selector -->
+      <!-- SELECTEUR DE LANGUE -->
       <div class="language-selector">
         <button class="language-btn" id="language-btn">
           <i class="fas fa-globe"></i> <span id="current-language">ENG</span> <i class="fas fa-chevron-down"></i>
@@ -59,66 +59,90 @@
     </div>
   </header>
 
-  <!-- ======= Hero Section ======= -->
+  <!-- SECTION HERO - AVEC FOND VIOLET DU PREMIER CODE -->
   <section id="hero">
     <div class="container">
-      <h1 data-translate="name">LIEHOUAN FRANCK ARNAUD</h1>
-      <h1 data-translate="japanese-name">リエウアン・フランク・アルノー</h1>
-      <div class="typed-text"><span data-translate="im">I'm</span> <span data-translate="ai-engineer"></span></div>
-      
-      <div class="social-links">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-skype"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 data-translate="name">LIEHOUAN FRANCK ARNAUD</h1>
+          <h1 class="slogan" data-translate="slogan">AI Research for Global Challenges</h1>
+          <div class="typed-text">
+            <span data-translate="im">I'm</span> 
+            <span id="typed-target"></span>
+          </div>
+          
+          <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-skype"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
+    <!-- SECTION ABOUT - DISPOSITION AMÉLIORÉE -->
     <section id="about" class="about">
       <div class="container">
         <div class="section-title">
           <h2 data-translate="about-me">About Me</h2>
+        </div>
+
+        <!-- Texte d'introduction en pleine largeur -->
+        <div class="about-intro">
           <p data-translate="about-description">
-          My name is Franck-Arnaud LIEHOUAN, from Côte d'Ivoire. I hold a Bachelor's degree in Mathematics and Computer Science and am currently pursuing a Master's in Applied Mathematics, specializing in Probability and Statistics. I work primarily with Python and R, focusing on data analysis, statistical modeling, and AI applications.
-          I am passionate about using artificial intelligence and data science to address real-world challenges in health, education, environment, and technology. I thrive in multidisciplinary teams, enjoy exploring innovative approaches, and continuously seek to expand my knowledge. My goal is to harness AI and mathematics to create inclusive, impactful, and sustainable solutions that enhance quality of life, especially in developing regions.
+            My name is Franck-Arnaud LIEHOUAN, from Côte d'Ivoire. I hold a Bachelor's degree in Mathematics and Computer Science and I study Applied Mathematics, focusing on Probability and Statistics. I work primarily with Python and R, focusing on data analysis, statistical modeling, and AI applications.
+            I am passionate about using artificial intelligence and data science to address real-world challenges in health, education, environment, and technology. I thrive in multidisciplinary teams, enjoy exploring innovative approaches, and continuously seek to expand my knowledge. My goal is to harness AI and mathematics to create inclusive, impactful, and sustainable solutions that enhance quality of life, especially in developing regions.
           </p>
         </div>
 
-        <div class="about-content">
-          <div class="about-text">
-            <h3 data-translate="personal-info">Personnal Information</h3>
+        <!-- Nouvelle disposition avec deux colonnes : informations personnelles et photo -->
+        <div class="about-content-container">
+          <!-- Colonne de gauche : Personal Information -->
+          <div class="personal-info">
+            <h3 data-translate="personal-info">Personal Information</h3>
             <div class="about-details">
-              <div class="detail-item">
-                <i class="fas fa-birthday-cake"></i>
-                <div><strong data-translate="birthday">Birthday:</strong> <span data-translate="birthday-date">1991 Nov 01</span></div>
+              <!-- Colonne 1 -->
+              <div class="detail-column">
+                <div class="detail-item">
+                  <i class="fas fa-birthday-cake"></i>
+                  <div><strong data-translate="birthday">Birthday:</strong> <span data-translate="birthday-date">1991 Nov 01</span></div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div><strong data-translate="city">City:</strong> <span data-translate="city-location">Nagoya, Japan</span></div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-code"></i>
+                  <div><strong data-translate="programming">Programming:</strong> <span data-translate="programming-languages">Python, Html, CSS, Javascripts</span></div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-heart"></i>
+                  <div><strong data-translate="hobbies">Hobbies:</strong> <span data-translate="hobbies-list">Reading, Football, Listening to music, Swimming</span></div>
+                </div>
               </div>
-              <div class="detail-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div><strong data-translate="city">City:</strong> <span data-translate="city-location">Nagoya, Japan</span></div>
-              </div>
-              <div class="detail-item">
-                <i class="fas fa-code"></i>
-                <div><strong data-translate="programming">Programming Language:</strong> <span data-translate="programming-languages">Python, Html, CSS, Javascripts</span></div>
-              </div>
-              <div class="detail-item">
-                <i class="fas fa-user-graduate"></i>
-                <div><strong data-translate="degree">Degree:</strong> <span data-translate="degree-details">Bachelor Degree in Mathematics and Computer Science</span></div>
-              </div>
-              <div class="detail-item">
-                <i class="fas fa-envelope"></i>
-                <div><strong data-translate="email">Email:</strong> liehouanfranck@yahoo.fr</div>
-              </div>
-              <div class="detail-item">
-                <i class="fas fa-language"></i>
-                <div><strong data-translate="languages">Languages:</strong> <span data-translate="language-list">English, French, Japanese</span></div>
+              
+              <!-- Colonne 2 -->
+              <div class="detail-column">
+                <div class="detail-item">
+                  <i class="fas fa-user-graduate"></i>
+                  <div><strong data-translate="degree">Degree:</strong> <span data-translate="degree-details">Bachelor in Math & CS</span></div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-envelope"></i>
+                  <div><strong data-translate="email">Email:</strong> <a href="mailto:larnaud@ozlab.org" class="email-link">larnaud@ozlab.org</a></div>
+                </div>
+                <div class="detail-item">
+                  <i class="fas fa-language"></i>
+                  <div><strong data-translate="languages">Languages:</strong> <span data-translate="language-list">English, French, Japanese</span></div>
+                </div>
               </div>
             </div>
           </div>
+          
+          <!-- Colonne de droite : Photo -->
           <div class="about-image">
             <img src="images/photo1.png" alt="LIEHOUAN FRANCK ARNAUD">
           </div>
@@ -126,22 +150,22 @@
       </div>
     </section>
 
-    <!-- ======= Resume Section ======= -->
+    <!-- SECTION RESUME -->
     <section id="resume" class="resume">
       <div class="container">
         <div class="section-title">
           <h2 data-translate="resume-title">Resume</h2>
         </div>
 
-        <!-- Summary Section -->
+        <!-- SOMMAIRE -->
         <div class="resume-summary">
           <h3 data-translate="summary">Summary</h3>
           <p><em data-translate="summary-description">I am a Mathematics and Computer Science graduate, I am deeply passionate about leveraging mathematics and technology, particularly Artificial Intelligence, to develop innovative solutions with significant social impact. Through my professional experience in community-based projects, I have gained direct insight into the real-world challenges faced by populations, which inspires my research and applied work. </em></p>
         </div>
 
-        <!-- Timeline Section -->
+        <!-- FRISE CHRONOLOGIQUE -->
         <div class="timeline-container">
-          <!-- Education Column -->
+          <!-- COLONNE ÉDUCATION -->
           <div class="timeline-column">
             <h2 data-translate="education">Education</h2>
             <div class="timeline-items">
@@ -150,22 +174,13 @@
                   <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="timeline-content">
-                  <h3 data-translate="masters-degree">Master's Degree in Mathematics & Computer Science</h3>
+                  <div class="timeline-title-container">
+                    <h3 data-translate="masters-degree">Master's Degree in Applied Mathematics</h3>
+                    <p data-translate="masters-specialization">Option: Probability & Statistics.</p>
+                  </div>
                   <h4 data-translate="university-1">Université Jean Lorougnon Guédé, Côte d'Ivoire</h4>
-                  <h5 data-translate="masters-date">2023 – 2024 (Ongoing)</h5>
-                  <p data-translate="masters-specialization">Specialization in Probability & Statistics.</p>
-                  <p data-translate="masters-thesis">Thesis on Extreme Value Theory & Hellinger Distance.</p>
-                </div>
-              </div>
-              
-              <div class="timeline-item">
-                <div class="timeline-icon">
-                  <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-content">
-                  <h3 data-translate="bachelors-honors">Bachelor's Degree (Honors) in Mathematics & Computer Science</h3>
-                  <h4 data-translate="university-2">Université Jean Lorougnon Guédé, Côte d'Ivoire</h4>
-                  <h5 data-translate="bachelors-honors-date">2022 – 2023</h5>
+                  <h5>2022 – 2025 <span class="ongoing-text" data-translate="ongoing">(Ongoing)</span></h5>
+                  
                 </div>
               </div>
               
@@ -176,13 +191,27 @@
                 <div class="timeline-content">
                   <h3 data-translate="bachelors-degree">Bachelor's Degree in Mathematics & Computer Science</h3>
                   <h4 data-translate="university-3">Université Jean Lorougnon Guédé, Côte d'Ivoire</h4>
-                  <h5 data-translate="bachelors-date">2020 – 2021</h5>
+                  <h5>2021</h5>
+                </div>
+              </div>
+
+              <!-- SECTION RECHERCHE -->
+              <div class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="timeline-content">
+                  <h3 data-translate="research">Research</h3>
+                  <ul>
+                    <li data-translate="research-1">Robustness of minimum Hellinger Distance, case of extreme value law</li>
+                    <li data-translate="research-2">Developing an AI-Driven application for precise malnutrition detection in Côte d'Ivoire</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Experience Column -->
+          <!-- COLONNE EXPÉRIENCE PROFESSIONNELLE -->
           <div class="timeline-column">
             <h2 data-translate="experience">Professional Experience</h2>
             <div class="timeline-items">
@@ -215,10 +244,10 @@
                   <i class="fas fa-briefcase"></i>
                 </div>
                 <div class="timeline-content">
-                  <h3 data-translate="job-3-title">Field Investigator</h3>
+                  <h3 data-translate="job-3-title">Field Investigator & Supervisor</h3>
                   <h4 data-translate="job-3-company">CARE International Côte d'Ivoire</h4>
                   <h5 data-translate="job-3-date">2020 – 2021</h5>
-                  <p data-translate="job-3-description">Collected data using Kobocollect and evaluated health committees.</p>
+                  <p data-translate="job-3-description">Collected field data, supervised nutrition activities, and evaluated health committees using Kobocollect.</p>
                 </div>
               </div>
               
@@ -237,29 +266,15 @@
           </div>
         </div>
 
-        <!-- Publications Section -->
-        <div class="resume-summary" style="margin-top: 50px;">
+        <!-- SECTION PUBLICATIONS -->
+        <div class="resume-summary" style="margin-top: 40px;">
           <h3 data-translate="publications">Publications</h3>
-          
-          <div style="margin-bottom: 20px;">
-            <h4 data-translate="year-2024">2024</h4>
-            <ul>
-              <li><strong>IPSJ 2024:</strong> <span data-translate="publication-1"></span></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 data-translate="year-2023">2023</h4>
-            <ul>
-              <li><strong>JSAI 2023:</strong> <span data-translate="publication-2"></span></li>
-              <li><strong>ICSEng 2023:</strong> <span data-translate="publication-3"></span></li>
-            </ul>
-          </div>
+          <p data-translate="publications-description">Currently preparing research papers for publication. Focused on developing impactful contributions to the fields of Applied Mathematics and AI-driven solutions for social challenges.</p>
         </div>
       </div>
     </section>
 
-    <!-- ======= Services Section ======= -->
+    <!-- SECTION SERVICES (COMPÉTENCES) - STYLE ÉPURÉ -->
     <section id="services" class="services">
       <div class="container">
         <div class="section-title">
@@ -270,56 +285,48 @@
         <div class="services-grid">
           <div class="service-card">
             <div class="service-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <h3 data-translate="skill-1-title">Deep Learning</h3>
-            <p data-translate="skill-1-description">Advanced knowledge in neural networks, convolutional networks, and recurrent networks for various AI applications.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-eye"></i>
-            </div>
-            <h3 data-translate="skill-2-title">Computer Vision</h3>
-            <p data-translate="skill-2-description">Expertise in image recognition, object detection, and visual data analysis using modern AI techniques.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fas fa-language"></i>
-            </div>
-            <h3 data-translate="skill-3-title">Natural Language Processing</h3>
-            <p data-translate="skill-3-description">Experience with text analysis, sentiment analysis, and language modeling using state-of-the-art NLP techniques.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
               <i class="fab fa-python"></i>
             </div>
-            <h3 data-translate="skill-4-title">Python Programming</h3>
-            <p data-translate="skill-4-description">Proficient in Python with extensive experience in data science libraries and AI frameworks.</p>
+            <h3 data-translate="python-programming">Python Programming</h3>
+            <!-- Les descriptions ont été supprimées -->
           </div>
 
           <div class="service-card">
             <div class="service-icon">
-              <i class="fas fa-microchip"></i>
+              <i class="fas fa-chart-line"></i>
             </div>
-            <h3 data-translate="skill-5-title">Internet of Things</h3>
-            <p data-translate="skill-5-description">Knowledge of IoT systems, sensor networks, and embedded systems for smart applications.</p>
+            <h3 data-translate="r-scripting">R Scripting</h3>
+            <!-- Les descriptions ont été supprimées -->
           </div>
 
           <div class="service-card">
             <div class="service-icon">
-              <i class="fas fa-robot"></i>
+              <i class="fas fa-calculator"></i>
             </div>
-            <h3 data-translate="skill-6-title">AI Research</h3>
-            <p data-translate="skill-6-description">Active research in AI applications for social impact, particularly in developing regions.</p>
+            <h3 data-translate="statistical-modeling">Statistical Modeling</h3>
+            <!-- Les descriptions ont été supprimées -->
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h3 data-translate="latex-typesetting">LaTeX Typesetting</h3>
+            <!-- Les descriptions ont été supprimées -->
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3 data-translate="academic-research-methods">Academic Research Methods</h3>
+            <!-- Les descriptions ont été supprimées -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======= Projects Section ======= -->
+    <!-- SECTION PROJETS - STYLE AMÉLIORÉ ET PLUS FIN -->
     <section id="projects" class="projects">
       <div class="container">
         <div class="section-title">
@@ -329,75 +336,23 @@
 
         <div class="projects-grid">
 
-          <!-- Projet 1 -->
+          <!-- PROJET UNIQUE - DÉTECTION IA MALNUTRITION -->
           <div class="project-card">
-            <h3 data-translate="project-1-title">Plateforme Recensement</h3>
-            <p><strong data-translate="date">Date :</strong> <span data-translate="project-1-date">Mars 2025</span></p>
+            <h3 data-translate="malnutrition-detection">AI Malnutrition Detection</h3>
+            <p><strong data-translate="date">Date:</strong> <span data-translate="sept-2025">Sept 2025</span></p>
+            <p data-translate="malnutrition-description">Development of an AI system for detecting malnutrition cases using computer vision and machine learning techniques.</p>
             <p>
-              <span class="badge statut-termine" data-translate="completed">Terminé</span>
-              <span class="badge visibilite-public" data-translate="public">Public</span>
+              <span class="badge statut-encours" data-translate="in-progress">In progress</span>
+              <span class="badge visibilite-prive" data-translate="private">Private</span>
             </p>
-            <a href="https://github.com/ton-compte/recensement" target="_blank" class="project-link">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-
-          <!-- Projet 2 -->
-          <div class="project-card">
-            <h3 data-translate="project-2-title">Détection IA Malnutrition</h3>
-            <p><strong data-translate="date">Date :</strong> <span data-translate="project-2-date">Avril 2025</span></p>
-            <p>
-              <span class="badge statut-encours" data-translate="in-progress">En cours</span>
-              <span class="badge visibilite-prive" data-translate="private">Privé</span>
-            </p>
-            <a href="#" class="project-link disabled" data-translate="not-available">Non consultable</a>
-          </div>
-
-          <!-- Projet 3 -->
-          <div class="project-card">
-            <h3 data-translate="project-3-title">Site Web Artisans</h3>
-            <p><strong data-translate="date">Date :</strong> <span data-translate="project-3-date">Février 2025</span></p>
-            <p>
-              <span class="badge statut-termine" data-translate="completed">Terminé</span>
-              <span class="badge visibilite-public" data-translate="public">Public</span>
-            </p>
-            <a href="https://github.com/ton-compte/artisans" target="_blank" class="project-link">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-
-          <!-- Projet 4 -->
-          <div class="project-card">
-            <h3 data-translate="project-4-title">Portfolio Personnel</h3>
-            <p><strong data-translate="date">Date :</strong> <span data-translate="project-4-date">Janvier 2025</span></p>
-            <p>
-              <span class="badge statut-encours" data-translate="in-progress">En cours</span>
-              <span class="badge visibilite-public" data-translate="public">Public</span>
-            </p>
-            <a href="https://github.com/ton-compte/portfolio" target="_blank" class="project-link">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-
-          <!-- Projet 5 -->
-          <div class="project-card">
-            <h3 data-translate="project-5-title">Détection de la Malnutrition</h3>
-            <p><strong data-translate="date">Date :</strong> <span data-translate="project-5-date">2025</span></p>
-            <p data-translate="project-5-description">Classification supervisée des enfants en état nutritionnel (normal, modéré, sévère) en utilisant Python et Random Forest.</p>
-            <p>
-              <span class="badge statut-termine" data-translate="completed">Terminé</span>
-              <span class="badge visibilite-public" data-translate="public">Public</span>
-            </p>
-            <a href="https://github.com/ton-compte/malnutrition-project" target="_blank" class="project-link">
-              <i class="fab fa-github"></i> GitHub
-            </a>
+            <a href="#" class="project-link disabled" data-translate="not-available">Not available</a>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ======= Contact Section ======= -->
+    <!-- SECTION CONTACT - NOUVEAU STYLE ÉPURÉ -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-title">
@@ -405,23 +360,37 @@
           <p data-translate="contact-description">Get in touch with me for collaborations or inquiries.</p>
         </div>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <h4 data-translate="location">Location</h4>
-            <p data-translate="location-details">Nagoya, Japan</p>
-          </div>
+        <div class="contact-container">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3 data-translate="location">Location</h3>
+                <p data-translate="location-details">Nagoya, Japan</p>
+              </div>
+            </div>
 
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <h4 data-translate="email-title">Email</h4>
-            <p>liehouanfranck@yahoo</p>
-          </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3 data-translate="email-title">Email</h3>
+                <p><a href="mailto:larnaud@ozlab.org" class="email-link">larnaud@ozlab.org</a></p>
+              </div>
+            </div>
 
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <h4 data-translate="call">Call</h4>
-            <p data-translate="call-details">Available upon request</p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3 data-translate="call">Call</h3>
+                <p data-translate="call-details">Available upon request</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -429,16 +398,14 @@
 
   </main>
 
-  <!-- ======= Footer ======= -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-content">
         <h3 data-translate="name">LIEHOUAN FRANCK ARNAUD</h3>
-        <p data-translate="footer-description"> Passionate about creating new technologies for social impact and sustainable development.</p>
+        <p data-translate="footer-description">Passionate about creating new technologies for social impact and sustainable development.</p>
         <div class="footer-social">
           <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-skype"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
@@ -449,12 +416,12 @@
     </div>
   </footer>
 
-  <!-- Back to top button -->
+  <!-- BOUTON RETOUR EN HAUT -->
   <div class="back-to-top">
     <i class="fas fa-arrow-up"></i>
   </div>
 
-  <!-- JavaScript -->
+  <!-- Fichier JavaScript -->
   <script src="script.js"></script>
-</body>
+</body> 
 </html>
